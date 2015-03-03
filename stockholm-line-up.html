@@ -4,7 +4,7 @@
 		<title>Line Ups - Stockholm | Pamabest European Festival</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="The Popular European Music Festival">
-		<meta name="author" content="">
+		<meta name="author" content="AlMaKyton">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/desktop.css">
@@ -13,6 +13,20 @@
 		<![endif]-->
 	</head>
 	<body>
-
+		<div class="wrapper">
+			<header>
+				<form action="login.php" method="POST">
+					<label for="login-user">Login</label>
+					<input type="text" id="login-user" placeholder="Username" required>
+					<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
+					<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
+				</form>
+				<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
+				<form action="quick-sign-up.php" method="POST">
+					<label for="sign-up-user">Sign Up</label>
+					<input type="text" id="sign-up-user" placeholder="Username" required>
+				</form>
+			</header>
+		</div>
 	</body>
 </html>
