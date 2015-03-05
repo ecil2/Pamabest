@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Berlin Lineup</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Berlin-Lineup.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="outerHeader">
+				<header id="innerHeader">
+					<form action="login.php" method="POST">
+						<label for="login-user"> Login </label>
+						<input type="text" id="login-user" placeholder="Username" required>
+						<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
+					</form>
+					<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before.-->
+					<form action="quick-sign-up.php" method="POST">
+						<label for="sign-up-user">Sign Up</label>
+						<input type="text" id="sign-up-user" placeholder="Username" required>
+					</form>
+					<nav>
+						<ul>
+							<li> Paris </li>
+							<li> Madrid </li>
+							<li> Berlin </li>
+							<li> Stockholm </li>
+                            <li> Tickets </li>
+                            <li> Store </li>
+						</ul>
+					</nav>
+				</header>
+                <div id="content">
+					<aside>
+                    </aside>
+					<section>
+                    </section>
+				</div>
+				<footer></footer>
+			</div>
+		</div>
+        </div>
+	</body>
+</html>
