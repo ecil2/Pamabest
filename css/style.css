@@ -1,4 +1,9 @@
-/* Template */
+.wrapper {
+	width: 960px;
+	border: 1px solid black;
+	margin: 0 auto;
+	}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -14,27 +19,19 @@ img {
 	height: auto;
 	width: 100%;
 }
-/* End Template */
 
-/*****************************
-Line Up Pages 
-*****************************/
-/**
-* Testing
-**/
-footer, section, aside, nav {
-	border: solid 1px #000;
-	height: 100px;
-}
 /**
 * Header
 **/
 header {
 	width: 100%;
+	height: 180px;
 }
 
 nav {
-}
+	border: 1px solid black;
+	height: 115px;
+	}
 
 nav li {
 	display: inline-block;
@@ -44,24 +41,31 @@ nav li {
 * Content
 **/
 #content {
-	width: 75%;
-	margin: 0 auto;
+	width: 100%;
+	height: 500px;
+	border: 1px solid black;
 }
 
 aside {
-	width: 32%;
+	width: 400px;
+	height: 500px;
 	float: left;
+	border: 1px solid black;
 }
 
 section {
-	width: 65%;
+	width: 550px;
 	float: right;
+	height: 500px;
+	float: right;
+	border: 1px solid black;
 }
 
 /**
 * Footer
 **/
 footer {
+	height:100px;
 	clear: both;
 	width: 100%;
 }
