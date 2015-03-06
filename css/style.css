@@ -1,14 +1,9 @@
-.wrapper {
-	width: 960px;
-	border: 1px solid black;
-	margin: 0 auto;
-	}
-
+/* Template */
 body {
   font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 section, article, nav, aside, header, footer, hgroup {
@@ -21,51 +16,127 @@ img {
 }
 
 /**
+* General
+**/
+header, footer {
+	background-color: #003761;
+	color: #fff;
+}
+
+/**
 * Header
 **/
 header {
-	width: 100%;
-	height: 180px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 97%;
+	padding: 1em 1.5em;
+	border-bottom: solid 2px #fff;
+}
+
+.form-containers {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translationY(-50%);
+	-moz-transform: translationY(-50%);
+	transform: translationY(-50%);
+	left: 0;
+	width: 25%;
+	text-align: right;
 }
 
 nav {
-	border: 1px solid black;
-	height: 115px;
-	}
+}
 
 nav li {
 	display: inline-block;
 }
 
+.header-logo {
+	position: relative;
+	top: 0;
+	left: 37.5%;
+	height: auto;
+	width: 25%;
+}
+
 /**
 * Content
 **/
-#content {
+#banner {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#banner img {
+	height: auto;
 	width: 100%;
-	height: 500px;
-	border: 1px solid black;
+}
+
+#banner > div {
+	position: absolute;
+	top: 1em;
+	left: 1.5em;
+	color: #fff;
+	font-size: 18pt;
+	padding: 0.5em;
+	background-color: rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	z-index: 50;
+}
+
+#content {
+	width: 960px;
+	background-image: url('img/');
+}
+
+.column {
+	width: 24%;
+	display: inline-block;
+}
+
+.column img	{
+	height: auto;
+	width: 
 }
 
 aside {
-	width: 400px;
-	height: 500px;
+	width: ;
 	float: left;
-	border: 1px solid black;
 }
 
 section {
-	width: 550px;
-	float: right;
 	height: 500px;
 	float: right;
-	border: 1px solid black;
 }
 
 /**
 * Footer
 **/
 footer {
-	height:100px;
+	padding: 1em;
 	clear: both;
 	width: 100%;
+	border-top: solid 2px #fff;
+}
+
+.footer-column {
+	display: inline-block;
+	width: 35%;
+}
+
+.footer-column:last-of-type {
+	width: 25%;
+}
+
+.footer-column > div {
+	display: inline-block;
+}
+
+footer li {
+	list-style-type: none;
 }
