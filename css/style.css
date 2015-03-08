@@ -310,7 +310,30 @@ section {
 	float: right;
 }
 
+<<<<<<< Updated upstream
+/**
+* Footer
+**/
+footer {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	clear: both;
+	width: 97.6%;
+	border-top: solid 2px #fff;
+}
+>>>>>>> Stashed changes
+
 /* Paris Main */
+
+#paris-home {
+	background-image: url('../img/parisHomeBackground.jpg');
+	background-repeat: no-repeat;
+	width: 945px;
+	height: 645px;
+}
+
 
 /* Paris Line Up */
 
