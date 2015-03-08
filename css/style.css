@@ -18,6 +18,12 @@ img {
 /**
 * General
 **/
+.wrapper {
+	background-image: url('../img/backgroundImage.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 header, footer {
 	background-color: #003761;
 	color: #fff;
@@ -26,10 +32,6 @@ header, footer {
 a:link, a:visited {
 	color: #fff;
 	text-decoration: none;
-}
-
-a:focus, a:hover, a:active {
-	font-weight: bold;
 }
 
 /**
@@ -87,18 +89,39 @@ header {
 	height: 3em;
 }
 
+.search label {
+	font-size: 18pt;
+}
+/* To be completed */
+/*
+#search {
+	width: 0;
+}
+*/
+
 nav {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
 	text-align: center;
+	z-index: 100
 }
 
 nav li {
 	display: inline-block;
 }
 
-nav a {
+nav a:link, nav a:visited {
 	border: solid 1px #fff;
 	padding: 0.4em 1.4em;
 	display: inline-block;
+	-webkit-transition: all 0.2s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+	padding-bottom: 1em;
 }
 
 /* Gradient Generator Used. Source: http://www.colorzilla.com/gradient-editor/. Accessed: 8 March 2015; */
@@ -206,7 +229,6 @@ nav a[href^="Contact"] {
 
 #content {
 	width: 960px;
-	background-image: url('img/');
 }
 
 .column {
