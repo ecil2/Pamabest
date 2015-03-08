@@ -23,6 +23,15 @@ header, footer {
 	color: #fff;
 }
 
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:focus, a:hover, a:active {
+	font-weight: bold;
+}
+
 /**
 * Header
 **/
@@ -30,27 +39,129 @@ header {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 97%;
-	padding: 1em 1.5em;
+	width: 96.4%;
+	padding: 1em 1.5em 0 1.5em;
 	border-bottom: solid 2px #fff;
 }
 
 .form-containers {
 	position: absolute;
+	/* Source: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/. Accessed: 8 March 2015; */
 	top: 50%;
-	-webkit-transform: translationY(-50%);
-	-moz-transform: translationY(-50%);
-	transform: translationY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/* End Sourced Code */
 	left: 0;
 	width: 25%;
 	text-align: right;
 }
 
+.search {
+	left: auto;
+	right: 0;
+	text-align: left;
+}
+
+.account > form:first-of-type > input[type="password"], .account > form:first-of-type > input[type="submit"] {
+	opacity: 0.0;
+	-webkit-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s;
+}
+
+.account > form:first-of-type:hover > input[type="password"], .account > form:first-of-type:focus > input[type="password"], .account > form:first-of-type:hover > input[type="submit"], .account > form:first-of-type:focus > input[type="submit"] {
+	opacity: 1.0;
+}
+
+.account > form:first-of-type {
+	height: 2em;
+	-webkit-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s;
+}
+
+.account > form:first-of-type:hover, .account > form:first-of-type:focus {
+	height: 3em;
+}
+
 nav {
+	text-align: center;
 }
 
 nav li {
 	display: inline-block;
+}
+
+nav a {
+	border: solid 1px #fff;
+	padding: 0.4em 1.4em;
+	display: inline-block;
+}
+
+/* Gradient Generator Used. Source: http://www.colorzilla.com/gradient-editor/. Accessed: 8 March 2015; */
+nav a[href^="Paris"] {
+	background: rgb(227,6,19); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(227,6,19,1) 0%, rgba(160,6,19,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(227,6,19,1)), color-stop(100%,rgba(160,6,19,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(227,6,19,1) 0%,rgba(160,6,19,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(227,6,19,1) 0%,rgba(160,6,19,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(227,6,19,1) 0%,rgba(160,6,19,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(227,6,19,1) 0%,rgba(160,6,19,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e30613', endColorstr='#a00613',GradientType=0 ); /* IE6-9 */
+}
+
+nav a[href^="Madrid"] {
+	background: rgb(255,221,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,221,0,1) 0%, rgba(216,177,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,221,0,1)), color-stop(100%,rgba(216,177,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,221,0,1) 0%,rgba(216,177,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,221,0,1) 0%,rgba(216,177,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,221,0,1) 0%,rgba(216,177,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,221,0,1) 0%,rgba(216,177,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd00', endColorstr='#d8b100',GradientType=0 ); /* IE6-9 */
+}
+
+nav a[href^="Berlin"] {
+	background: rgb(58,169,53); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(58,169,53,1) 0%, rgba(39,124,42,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(58,169,53,1)), color-stop(100%,rgba(39,124,42,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(58,169,53,1) 0%,rgba(39,124,42,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(58,169,53,1) 0%,rgba(39,124,42,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(58,169,53,1) 0%,rgba(39,124,42,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(58,169,53,1) 0%,rgba(39,124,42,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa935', endColorstr='#277c2a',GradientType=0 ); /* IE6-9 */
+}
+
+nav a[href^="Stockholm"] {
+	background: rgb(0,159,227); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,159,227,1) 0%, rgba(0,113,158,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,159,227,1)), color-stop(100%,rgba(0,113,158,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,159,227,1) 0%,rgba(0,113,158,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,159,227,1) 0%,rgba(0,113,158,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,159,227,1) 0%,rgba(0,113,158,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,159,227,1) 0%,rgba(0,113,158,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fe3', endColorstr='#00719e',GradientType=0 ); /* IE6-9 */
+}
+
+nav a[href^="Ticket"] {
+	background: rgb(45,46,131); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(45,46,131,1) 0%, rgba(30,31,86,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(45,46,131,1)), color-stop(100%,rgba(30,31,86,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(45,46,131,1) 0%,rgba(30,31,86,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(45,46,131,1) 0%,rgba(30,31,86,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(45,46,131,1) 0%,rgba(30,31,86,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(45,46,131,1) 0%,rgba(30,31,86,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2e83', endColorstr='#1e1f56',GradientType=0 ); /* IE6-9 */
+}
+
+nav a[href^="Contact"] {
+	background: rgb(243,146,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(243,146,0,1) 0%, rgba(147,88,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,146,0,1)), color-stop(100%,rgba(147,88,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(243,146,0,1) 0%,rgba(147,88,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(243,146,0,1) 0%,rgba(147,88,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(243,146,0,1) 0%,rgba(147,88,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(243,146,0,1) 0%,rgba(147,88,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f39200', endColorstr='#935800',GradientType=0 ); /* IE6-9 */
 }
 
 .header-logo {
@@ -120,7 +231,7 @@ section {
 footer {
 	padding: 1em;
 	clear: both;
-	width: 100%;
+	width: 97.6%;
 	border-top: solid 2px #fff;
 }
 

@@ -7,6 +7,8 @@
 		<meta name="author" content="AlMaKyton">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
+		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,8 +16,10 @@
 		<script src="jquery-1.11.2.js"></script>
 		<!-- Begin jQuery Script -->
 		<!-- Source: http://stackoverflow.com/questions/4818854/javascript-import-html-is-it-possible/4819087#4819087. Accessed: 04 March 2015; -->
-		<script>
-		$(".outerHeader").load("header.html");
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#outerHeader').load('./header.html');
+		});
 		</script>
 	</head>
 	<body>
@@ -29,28 +33,30 @@
 							<input type="text" id="login-user" placeholder="Username" required>
 							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
+							<input type="submit" value="Log in!">
 						</form>
 						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
 						<form action="quick-sign-up.php" method="POST">
 							<label for="sign-up-user">Sign Up</label>
 							<input type="text" id="sign-up-user" placeholder="Username" required>
+							<input type="submit" value="Start Now!">
 						</form>
 					</div>
 					<div class="search form-containers">
 						<form action="search.php" method="GET">
 							<!-- Icon to be set for the :before pseudo of the label element -->
-							<label for="search"></label>
+							<label for="search" class="genericon genericon-search"></label>
 							<input type="search" id="search" placeholder="John Doe">
 						</form>
 					</div>
 					<nav>
 						<ul>
 							<li><a href="Paris-homepage.html">Paris</a></li>
-							<li>Madrid</li>
-							<li>Berlin</li>
-							<li>Stockholm</li>
-							<li>Tickets</li>
-							<li>Contact</li>
+							<li><a href="Madrid-homepage.html">Madrid</a></li>
+							<li><a href="Berlin-homepage.html">Berlin</a></li>
+							<li><a href="Stockholm-homepage.html">Stockholm</a></li>
+							<li><a href="Tickets.html">Tickets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -63,7 +69,7 @@
 				/*var bannerTransition = setInterval(function() {imgAttribute()}, 5000);
 				var bannerTransition = setInterval(function() {this()}, 5000);
 				var numberRandomiser;
-				var imgNumber = 5 - 3;
+				var imgNumber = numberRandomiser;
 
 				function imgAttribute() {
 					var numberRandomiser = Math.floor((Math.random() * 4) + 1);
@@ -78,7 +84,7 @@
 				var imgEnum = [1,2,3,4];
 				$('img').attr('src',imgEnum[0]);
 
-				$('bannerImg').fadeOut('slow',function(){
+				$('#bannerImg').fadeOut('slow',function(){
 					$(this).attr('src', imgSource).fadeIn('slow');
 				});
 				</script>
