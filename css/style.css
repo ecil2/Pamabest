@@ -63,6 +63,10 @@ header {
 	text-align: left;
 }
 
+.account input[type="submit"] {
+	content: '\f429';
+}
+
 .account > form:first-of-type > input[type="password"], .account > form:first-of-type > input[type="submit"] {
 	opacity: 0.0;
 	-webkit-transition: all 0.2s ease-in 0s;
