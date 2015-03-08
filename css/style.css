@@ -65,17 +65,28 @@ header {
 	text-align: left;
 }
 
-.account input[type="submit"] {
-	content: '\f429';
+#login-pass {
+	width: 52%;
 }
 
-.account > form:first-of-type > input[type="password"], .account > form:first-of-type > input[type="submit"] {
+.account span {
+	font-size: 18pt;
+	line-height: 0.6;
+}
+
+.account button {
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.account > form:first-of-type > input[type="password"], .account > form:first-of-type > button {
 	opacity: 0.0;
 	-webkit-transition: all 0.2s ease-in 0s;
 	transition: all 0.2s ease-in 0s;
 }
 
-.account > form:first-of-type:hover > input[type="password"], .account > form:first-of-type:focus > input[type="password"], .account > form:first-of-type:hover > input[type="submit"], .account > form:first-of-type:focus > input[type="submit"] {
+.account > form:first-of-type:hover > input[type="password"], .account > form:first-of-type:focus > input[type="password"], .account > form:first-of-type:hover > button, .account > form:first-of-type:focus > button {
 	opacity: 1.0;
 }
 
@@ -255,6 +266,9 @@ section {
 * Footer
 **/
 footer {
+	position: relative;
+	top: 0;
+	left: 0;
 	padding: 1em;
 	clear: both;
 	width: 97.6%;
@@ -276,4 +290,20 @@ footer {
 
 footer li {
 	list-style-type: none;
+}
+
+.footer-column:last-of-type {
+	position: absolute;
+	/* Source: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/. Accessed: 8 March 2015; */
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/* End Sourced Code */
+	right: 0;
+}
+
+.footer-column .genericon {
+	font-size: 30pt;
+	margin-right: 1em;
 }

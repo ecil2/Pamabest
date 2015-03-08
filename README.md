@@ -13,3 +13,5 @@ How to create Issues
 GitHub has a starter tutorial which you guys could splash over, and I recommend you do, skipping through to the points I mentioned earlier if you are short on time.
 
 BRAND GUIDELINES TO BE COMMITTED HERE
+
+UPDATE: Well I guess there arent really many guidelines...

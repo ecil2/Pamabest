@@ -36,13 +36,13 @@
 							<input type="text" id="login-user" placeholder="Username" required>
 							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
-							<input type="submit" value="" class="genericon genericon-next">
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
 						<form action="quick-sign-up.php" method="POST">
 							<label for="sign-up-user">Sign Up</label>
 							<input type="text" id="sign-up-user" placeholder="Username" required>
-							<input type="submit" value="S">
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 					</div>
 					<div class="search form-containers">
@@ -66,31 +66,6 @@
 			</div>
 			<div id="banner">
 				<img id="bannerImg" src="img/banner3.jpg" alt="This image is called banner1.jpg" height="340" width="1020">
-				<!-- Javascript timing tutorial: http://www.w3schools.com/js/js_timing.asp -->
-				<script>
-				/* Javascript Banner Transition Attempt */
-				/*var bannerTransition = setInterval(function() {imgAttribute()}, 5000);
-				var bannerTransition = setInterval(function() {this()}, 5000);
-				var numberRandomiser;
-				var imgNumber = numberRandomiser;
-
-				function imgAttribute() {
-					var numberRandomiser = Math.floor((Math.random() * 4) + 1);
-					var imgSource = "img/banner" + imgNumber + ".jpg";
-					document.getElementById("bannerImg").src = imgSource;
-					document.getElementById("bannerImg").alt = "This image is called " + imgSource;
-				}*/
-
-				/* jQuery Banner Transition Attempt */
-				/* Source: Brad Christie: http://stackoverflow.com/questions/4857338/how-to-add-fading-or-image-transition-effect-using-jquery. Accessed: 6 March 2015; */
-				/*var img = 0;
-				var imgEnum = [1,2,3,4];
-				$('img').attr('src',imgEnum[0]);
-
-				$('#bannerImg').fadeOut('slow',function(){
-					$(this).attr('src', imgSource).fadeIn('slow');
-				});*/
-				</script>
 				<div>September <sup>12th</sup> - 19<sup>th</sup></div>
 			</div>
 			<div id="content">
@@ -130,9 +105,9 @@
 					<li>ls1 1ab</li>
 				</div>
 				<div class="footer-column">
-					<span class="genericon genericon-twitter"></span>
-					<span class="genericon genericon-instagram"></span>
-					<span class="genericon genericon-facebook"></span>
+					<a href="http://www.twitter.com"><span class="genericon genericon-twitter"></span></a>
+					<a href="http://instagram.com"><span class="genericon genericon-instagram"></span></a>
+					<a href="http://facebook.com/Saborknight"><span class="genericon genericon-facebook"></span></a>
 				</div>
 				<!-- Icon Crediting the Author -->
 				<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icons8" title="Icons8">Icons8</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
