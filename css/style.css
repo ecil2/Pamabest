@@ -211,58 +211,6 @@ nav a[href^="Contact"] {
 }
 
 /**
-* Content
-**/
-#banner {
-	position: relative;
-	top: 0;
-	left: 0;
-}
-
-#banner img {
-	height: auto;
-	width: 100%;
-}
-
-#banner > div {
-	position: absolute;
-	top: 1em;
-	left: 1.5em;
-	color: #fff;
-	font-size: 18pt;
-	padding: 0.5em;
-	background-color: rgba(0,0,0,0.6);
-	-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
-	-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
-	box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
-	z-index: 50;
-}
-
-#content {
-	width: 960px;
-}
-
-.column {
-	width: 24%;
-	display: inline-block;
-}
-
-.column img	{
-	height: auto;
-	width: 
-}
-
-aside {
-	width: ;
-	float: left;
-}
-
-section {
-	height: 500px;
-	float: right;
-}
-
-/**
 * Footer
 **/
 footer {
@@ -307,3 +255,77 @@ footer li {
 	font-size: 30pt;
 	margin-right: 1em;
 }
+
+/**
+* Content
+**/
+/* Homepage */
+#banner {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#banner img {
+	height: auto;
+	width: 100%;
+}
+
+#banner > div {
+	position: absolute;
+	top: 1em;
+	left: 1.5em;
+	color: #fff;
+	font-size: 18pt;
+	padding: 0.5em;
+	background-color: rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.36);
+	z-index: 50;
+}
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.column {
+	width: 24%;
+	display: inline-block;
+}
+
+.column img	{
+	height: auto;
+	width: 
+}
+
+aside {
+	width: ;
+	float: left;
+}
+
+section {
+	height: 500px;
+	float: right;
+}
+
+/* Paris Main */
+
+/* Paris Line Up */
+
+/* Madrid Main */
+
+/* Madrid Line Up */
+
+/* Berlin Main */
+
+/* Berlin Line Up */
+
+/* Stockholm Main */
+
+/* Stockholm Line Up */
+
+/* Contact */
+
+/* Tickets */
