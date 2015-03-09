@@ -1,8 +1,8 @@
 TO DO for WEB DEV:
-1. Re-name gallery-test.html -> index.html
+1. DONE, PROGRESSED - Re-name gallery-test.html -> index.html
 
 FOR FEADER:
-1. DONE, UNPROGRESSED - Add font-loader.css to html head sections (cross-pages)
-2. DONE, UNPROGRESSED - Add Anchor element for the logo pointing to home (gallery-test.html:33)
-3. DONE, UNPROGRESSED - Apply anchor element to email in footer (gallery-test.html:101)
-4. DONE, UNPROGRESSED - ul to the footer columns!
+1. DONE, PROGRESSED - Add font-loader.css to html head sections (cross-pages)
+2. DONE, PROGRESSED - Add Anchor element for the logo pointing to home (gallery-test.html:33)
+3. DONE, PROGRESSED - Apply anchor element to email in footer (gallery-test.html:101)
+4. DONE, PROGRESSED - ul to the footer columns!
