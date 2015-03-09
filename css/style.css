@@ -69,14 +69,10 @@ header {
 	text-align: left;
 }
 
-<<<<<<< Updated upstream
-=======
 #login-pass {
 	width: 52%;
 }
 
-
->>>>>>> Stashed changes
 .account span {
 	font-size: 18pt;
 	line-height: 0.6;
@@ -399,8 +395,6 @@ footer li {
 	z-index: 50;
 }
 
-<<<<<<< HEAD
-=======
 #home-content {
 	width: 960px;
 	margin: 0 auto;
