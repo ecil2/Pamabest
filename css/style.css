@@ -1,6 +1,6 @@
 /* Template */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Abadi-Standard-Light", Helvetica, Arial;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
@@ -285,7 +285,7 @@ footer li {
 	z-index: 50;
 }
 
-#home-content {
+#content {
 	width: 960px;
 	margin: 0 auto;
 	padding-bottom: 0.5em;
@@ -353,10 +353,15 @@ footer {
 #paris-home {
 	background-image: url('../img/parisHomeBackground.jpg');
 	background-repeat: no-repeat;
-	width: 945px;
-	height: 645px;
+	width: 939px;
+	height: 643px;
 	margin: 30px;
 	position: relative;
+}
+
+#paris-home h2 {
+	font-family: "Abadi-Standard-Light", Helvetica, Arial;
+	color: white;
 }
 
 #paris-home-text {
@@ -366,13 +371,58 @@ footer {
 	float: right;
 	margin-top: 30px;
 	margin-right: 35px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 #paris-links {
-	border: solid white 1px;
 	height: 257px;
 	clear: both;
+	position: relative;
+	margin-left: 35px;
+}
+
+#paris-home img {
+	height: auto;
+	width: auto;
+}
+
+#viewGallery {
+	left: 295px;
+}
+
+#buyTickets {
+	right: 35px;
+}
+
+.imageThumb{
+	overflow: hidden;
+	position: absolute;
+}
+
+.imageThumb p {
+	position: absolute;
+	/*display: inline-block;*/
+	width: 100%;
+	bottom: -22px;
+	left: 0;
+	color: white;
+	background-color: #ee4844;
+	padding: 10px;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+	-ms-transition: -ms-transform 0.3s, opacity 0.3s;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+}
+
+.imageThumb:hover p {
+	opacity: 1;
+	-ms-transform: translate(0px, -30px);
+	-webkit-transform: translate(0px, -30px);
+	transform: translate(0px, -30px);
+}
+
+#parisgif {
+	margin-left: 10px;
 }
 
 
