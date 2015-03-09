@@ -2,27 +2,27 @@
 @font-face {
 	font-family: 'Abadi-Condensed-Regular';
 	src:	url('AbadiMT-Condensed.eot');
-	src:	url('AbadiMT-Condensed?#iefix') format('embedded-opentype'),
+	src:	url('AbadiMT-Condensed.eot?#iefix') format('embedded-opentype'),
 			url('AbadiMT-Condensed.woff') format('woff'),
 			url('AbadiMT-Condensed.ttf') format('truetype');
 	font-family: 'Abadi-Condensed-Italic';
-	src:	url('AbadiMT-CondensedItalic');
-	src:	url('AbadiMT-CondensedItalic?#iefix') format('embedded-opentype'),
+	src:	url('AbadiMT-CondensedItalic.eot');
+	src:	url('AbadiMT-CondensedItalic.eot?#iefix') format('embedded-opentype'),
 			url('AbadiMT-CondensedItalic.woff') format('woff'),
 			url('AbadiMT-CondensedItalic.ttf') format('truetype');
 	font-family: 'Abadi-Standard-Light';
 	src:	url('AbadiMTStd-Light.eot');
-	src:	url('AbadiMTStd-Light?#iefix') format('embedded-opentype'),
+	src:	url('AbadiMTStd-Light.eot?#iefix') format('embedded-opentype'),
 			url('AbadiMTStd-Light.woff') format('woff'),
 			url('AbadiMTStd-Light.ttf') format('truetype');
 	font-family: 'Abadi-Standard-Light-Italic';
 	src:	url('AbadiMTStd-LightItalic.eot');
-	src:	url('AbadiMTStd-LightItalic?#iefix') format('embedded-opentype'),
+	src:	url('AbadiMTStd-LightItalic.eot?#iefix') format('embedded-opentype'),
 			url('AbadiMTStd-LightItalic.woff') format('woff'),
 			url('AbadiMTStd-LightItalic.ttf') format('truetype');
 	font-family: 'Abadi-Standard-Light-Italic-2';
 	src:	url('AbadiMTStd-LightItalic2.eot');
-	src:	url('AbadiMTStd-LightItalic2?#iefix') format('embedded-opentype'),
+	src:	url('AbadiMTStd-LightItalic2.eot?#iefix') format('embedded-opentype'),
 			url('AbadiMTStd-LightItalic2.woff') format('woff'),
 			url('AbadiMTStd-LightItalic2.ttf') format('truetype');
 }

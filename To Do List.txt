@@ -1,4 +1,8 @@
 TO DO for WEB DEV:
-1. Apply anchor element to email in footer (gallery-test.html:101)
-2. Re-name gallery-test.html -> index.html
-3. Add font-loader.css to html head sections (cross-pages)
+1. Re-name gallery-test.html -> index.html
+
+FOR FEADER:
+1. Add font-loader.css to html head sections (cross-pages)
+2. Add Anchor element for the logo pointing to home (gallery-test.html:33)
+3. Apply anchor element to email in footer (gallery-test.html:101)
+4. ul to the footer columns!
