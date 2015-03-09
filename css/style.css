@@ -238,6 +238,14 @@ footer {
 	display: inline-block;
 }
 
+.footer-column:first-of-type a:link, .footer-column:first-of-type a:visited {
+	border-bottom: solid 1px #fff;
+}
+
+.footer-column:first-of-type a:hover, .footer-column:first-of-type a:active, .footer-column:first-of-type a:focus {
+	border-bottom: none;
+}
+
 footer li {
 	list-style-type: none;
 }
