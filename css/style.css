@@ -19,7 +19,7 @@ img {
 * General
 **/
 .wrapper {
-	background-image: url('../img/backgroundImage.jpg');
+	background-image:url(../img/backgroundImage.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -285,6 +285,7 @@ footer li {
 /**
 * Content
 **/
+
 /* Homepage */
 #banner {
 	position: relative;
@@ -398,6 +399,8 @@ footer li {
 	z-index: 50;
 }
 
+<<<<<<< HEAD
+=======
 #home-content {
 	width: 960px;
 	margin: 0 auto;
@@ -455,6 +458,7 @@ footer {
 	border-top: solid 2px #fff;
 }
 
+<<<<<<< HEAD
 /* Contact Page */
 
 #contact-content {
@@ -561,6 +565,9 @@ textarea {
 	width: 150px;
 }
 
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
 /* Paris Main */
 
 #paris-content {
@@ -621,7 +628,7 @@ textarea {
 	left: 295px;
 }
 
-#buyTickets {
+#Madrid-buyTickets {
 	right: 35px;
 }
 
@@ -848,7 +855,45 @@ h1{
 
 /* Berlin Main */
 
+#Berlin-banner {
+	padding-top: 2em;
+	background-color: #135567;
+}
+
+#Berlin-left-content {
+	text-align:center;
+	float: left;
+	width: 300px;
+	height:500px;
+	margin-left: 150px;
+	margin-top: 75px;
+	}
+#Berlin-left-content-text {
+	font-size:20px;
+	margin-top: 10px;
+	}
+#Berlin-right-content {
+	float: right;
+	width: 700px;
+	height: 800px;
+	margin-right:150px;
+	margin-top: 50px;
+	}
+
 /* Berlin Line Up */
+#Berlin-left-content-line-up {
+	float: left;
+	width: 40%;
+	height: 600px;
+	margin-top: -50px;
+	}
+#Berlin-right-content-line-up {
+	float: right;
+	width: 800px;
+	height: 600px;
+	margin-bottom: 100px;
+	margin-right: 50px;
+	}
 
 /* Stockholm Main */
 
