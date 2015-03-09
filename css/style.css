@@ -19,7 +19,7 @@ img {
 * General
 **/
 .wrapper {
-	background-image: url('../img/backgroundImage.jpg');
+	background-image:url(../img/backgroundImage.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -281,6 +281,7 @@ footer li {
 /**
 * Content
 **/
+
 /* Homepage */
 #banner {
 	position: relative;
@@ -394,6 +395,8 @@ footer li {
 	z-index: 50;
 }
 
+<<<<<<< HEAD
+=======
 #home-content {
 	width: 960px;
 	margin: 0 auto;
@@ -451,6 +454,7 @@ footer {
 	border-top: solid 2px #fff;
 }
 
+>>>>>>> origin/master
 /* Paris Main */
 
 #paris-content {
@@ -738,7 +742,40 @@ h1{
 
 /* Berlin Main */
 
+#left-content {
+	text-align:center;
+	float: left;
+	width: 300px;
+	height:500px;
+	margin-left: 150px;
+	margin-top: 75px;
+	}
+#left-content-text {
+	font-size:20px;
+	margin-top: 10px;
+	}
+#right-content {
+	float: right;
+	width: 700px;
+	height: 800px;
+	margin-right:150px;
+	margin-top: 50px;
+	}
+
 /* Berlin Line Up */
+#left-content-line-up {
+	float: left;
+	width: 40%;
+	height: 600px;
+	margin-top: -50px;
+	}
+#right-content-line-up {
+	float: right;
+	width: 800px;
+	height: 600px;
+	margin-bottom: 100px;
+	margin-right: 50px;
+	}
 
 /* Stockholm Main */
 
