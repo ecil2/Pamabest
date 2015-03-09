@@ -742,7 +742,12 @@ h1{
 
 /* Berlin Main */
 
-#left-content {
+#Berlin-banner {
+	padding-top: 2em;
+	background-color: #135567;
+}
+
+#Berlin-left-content {
 	text-align:center;
 	float: left;
 	width: 300px;
@@ -750,11 +755,11 @@ h1{
 	margin-left: 150px;
 	margin-top: 75px;
 	}
-#left-content-text {
+#Berlin-left-content-text {
 	font-size:20px;
 	margin-top: 10px;
 	}
-#right-content {
+#Berlin-right-content {
 	float: right;
 	width: 700px;
 	height: 800px;
@@ -763,13 +768,13 @@ h1{
 	}
 
 /* Berlin Line Up */
-#left-content-line-up {
+#Berlin-left-content-line-up {
 	float: left;
 	width: 40%;
 	height: 600px;
 	margin-top: -50px;
 	}
-#right-content-line-up {
+#Berlin-right-content-line-up {
 	float: right;
 	width: 800px;
 	height: 600px;
