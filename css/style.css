@@ -344,6 +344,12 @@ footer {
 
 /* Paris Main */
 
+#paris-content {
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 0.5em;
+}
+
 #paris-home {
 	background-image: url('../img/parisHomeBackground.jpg');
 	background-repeat: no-repeat;
