@@ -116,7 +116,7 @@ nav {
 	left: 0;
 	width: 100%;
 	text-align: center;
-	z-index: 100
+	z-index: 100;
 }
 
 nav li {
@@ -360,22 +360,33 @@ footer {
 	width: 939px;
 	height: 643px;
 	margin: 30px;
+	margin-top: 60px;
 	position: relative;
+}
+
+#paris-home h1 {
+	font-family: "Abadi-Standard-Light", Helvetica, Arial;
+	color: white;
+	font-weight: normal;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 200%;
 }
 
 #paris-home h2 {
 	font-family: "Abadi-Standard-Light", Helvetica, Arial;
 	color: white;
+	font-weight: normal;
 }
 
 #paris-home-text {
-	border: solid white 1px;
-	width: 480px;
+	width: 495px;
 	height: 135px;
 	float: right;
 	margin-top: 30px;
 	margin-right: 35px;
 	margin-bottom: 20px;
+	line-height: 150%;
 }
 
 #paris-links {
@@ -383,6 +394,7 @@ footer {
 	clear: both;
 	position: relative;
 	margin-left: 35px;
+	margin-bottom: 10px;
 }
 
 #paris-home img {
@@ -431,6 +443,134 @@ footer {
 
 
 /* Paris Line Up */
+
+#paris-lineup {
+	background-image: url('../img/parisLineupBackground.jpg');
+	background-repeat: no-repeat;
+	width: 939px;
+	height: 643px;
+	margin: 30px;
+	margin-top: 60px;
+	position: relative;
+}
+
+#paris-lineup-text h1 {
+	font-family: "Abadi-Standard-Light", Helvetica, Arial;
+	color: white;
+	font-weight: normal;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 200%;
+}
+
+#paris-lineup-text h2 {
+	font-family: "Abadi-Standard-Light", Helvetica, Arial;
+	color: white;
+	font-weight: normal;
+}
+
+#paris-lineup-text {
+	width: 360px;
+	height: 135px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 35px;
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+#paris-content img {
+	height: auto;
+	width: auto;
+}
+
+#lineupcontainer {
+	height: 425px;
+	clear: both;
+	position: relative;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.lineupimage {
+	position: absolute;
+}
+
+#Bastille {
+	top: 0;
+	left: 0;
+}
+
+#Britney {
+	left: 230px;
+	z-index: 30;
+}
+
+#Bruno {
+	bottom: 0;
+}
+
+#Chris {
+	bottom: 0;
+	right: 0;
+	z-index: 50;
+}
+
+#Ed {
+	bottom: 0;
+	left: 170px;
+}
+
+#George {
+	top: 70px;
+}
+
+#Hozier {
+	top: 95px;
+	left: 170px;
+}
+
+#Labrinth {
+	right: 140px;
+	top: 160px;
+}
+
+#Olly {
+	right: 0;
+	top: 90px;
+	z-index: 40;
+}
+
+#Paloma {
+	left: 200px;
+	bottom: 70px;
+}
+
+#Pharrell {
+	right: 190px;
+	bottom: 100px;
+}
+
+#Rita {
+	bottom: 0;
+	right: 170px;
+}
+
+#Sam {
+	left: 0;
+	bottom: 125px;
+}
+
+#Taylor {
+	right: 105px;
+	top: 60px;
+}
+
+#Vaccines {
+	top: 0;
+	right: 0;
+
+}
 
 /* Madrid Main */
 
