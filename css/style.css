@@ -135,6 +135,12 @@ nav a:hover, nav a:focus, nav a:active {
 	padding-bottom: 1em;
 }
 
+nav a.nav-active {
+	padding-bottom: 1em;
+	-webkit-transition: none;
+	transition: none;
+}
+
 /* Gradient Generator Used. Source: http://www.colorzilla.com/gradient-editor/. Accessed: 8 March 2015; */
 nav a[href^="Paris"] {
 	background: rgb(227,6,19); /* Old browsers */
