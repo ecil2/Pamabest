@@ -419,13 +419,14 @@ footer {
 .imageThumb{
 	overflow: hidden;
 	position: absolute;
+	height: 250px;
 }
 
 .imageThumb p {
 	position: absolute;
 	/*display: inline-block;*/
 	width: 100%;
-	bottom: -22px;
+	bottom: -30px;
 	left: 0;
 	color: white;
 	background-color: #ee4844;
