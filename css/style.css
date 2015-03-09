@@ -270,14 +270,101 @@ footer li {
 	position: relative;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 30em;
+	overflow: hidden;
 }
 
-#banner img {
+.banner-slider {
+	-webkit-animation: image-slide 20s ease infinite;
+	-moz-animation: image-slide 20s ease infinite;
+	animation: image-slide 20s ease infinite;
+}
+
+.banner-slider img {
 	height: auto;
 	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* GPU Hack. Source: https://css-tricks.com/infinite-all-css-scrolling-slideshow/. Accessed: 9 March 2015; */
+	-webkit-transform: translate3d(0, 0, 0);
+	/* End Source */
+	transform: translate3d(0, 0, 0);
 }
 
-#banner > div {
+.banner-slider img:nth-of-type(2) {
+	transform: translateX(100%);
+}
+
+.banner-slider img:nth-of-type(3) {
+	transform: translateX(200%);
+}
+
+.banner-slider img:nth-of-type(4) {
+	transform: translateX(300%);
+}
+
+.banner-slider img:nth-of-type(5) {
+	transform: translateX(400%);
+}
+
+/* Banner Animation Keyframes */
+@-webkit-keyframes image-slide {
+	0%, 22% {
+		transform: translateX(0%);
+	}
+	48%, 24% {
+		transform: translateX(-100%);
+	}
+	74%, 50% {
+		transform: translateX(-200%);
+	}
+	99%, 76% {
+		transform: translateX(-300%);
+	}
+	100% {
+		transform: translateX(-400%);
+	}
+}
+
+@-moz-keyframes image-slide {
+	0%, 22% {
+		transform: translateX(0%);
+	}
+	48%, 24% {
+		transform: translateX(-100%);
+	}
+	74%, 50% {
+		transform: translateX(-200%);
+	}
+	99%, 76% {
+		transform: translateX(-300%);
+	}
+	100% {
+		transform: translateX(-400%);
+	}
+}
+
+@keyframes image-slide {
+	0%, 22% {
+		transform: translateX(0%);
+	}
+	48%, 24% {
+		transform: translateX(-100%);
+	}
+	74%, 50% {
+		transform: translateX(-200%);
+	}
+	99%, 76% {
+		transform: translateX(-300%);
+	}
+	100% {
+		transform: translateX(-400%);
+	}
+}
+
+#banner .banner-date {
 	position: absolute;
 	top: 1em;
 	left: 1.5em;
