@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pamabest European Festival</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="The Popular European Music Festival">
+		<meta name="author" content="AlMaKyton">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
+		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
+		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Include jQuery Library -->
+		<script src="js/jquery-1.11.2.js"></script>
+		<!-- Begin jQuery Script -->
+		<!-- Source: http://stackoverflow.com/questions/4818854/javascript-import-html-is-it-possible/4819087#4819087. Accessed: 04 March 2015; -->
+		<script type="text/javascript">/*
+		$(document).ready(function(){
+			$('#outerHeader').load('./header.html');
+		});*/
+		</script>
+		<!-- Included JS Snippets -->
+		<!-- To be Completed -->
+		<!-- <script src="js/search-bar.js"></script> -->
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="outerHeader">
+				<header id="innerHeader">
+					<a href="index.html">
+						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					</a>
+					<div class="account form-containers">
+						<form action="login.php" method="POST">
+							<label for="login-user">Login</label>
+							<input type="text" id="login-user" placeholder="Username" required>
+							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
+							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
+						</form>
+						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
+						<form action="quick-sign-up.php" method="POST">
+							<label for="sign-up-user">Sign Up</label>
+							<input type="text" id="sign-up-user" placeholder="Username" required>
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
+						</form>
+					</div>
+					<div class="search form-containers">
+						<form action="search.php" method="GET">
+							<!-- Icon to be set for the :before pseudo of the label element -->
+							<label for="search" class="genericon genericon-search"></label>
+							<input type="search" id="search" placeholder="John Doe">
+						</form>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="Paris-homepage.html">Paris</a></li>
+							<li><a href="Madrid-homepage.html">Madrid</a></li>
+							<li><a href="Berlin-homepage.html">Berlin</a></li>
+							<li><a href="Stockholm-homepage.html">Stockholm</a></li>
+							<li><a href="Tickets.html">Tickets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			
+			<div id="stockholm-content">
+			</div>
+
+			<footer>
+				<div class="footer-column">
+					<div>
+						<ul>
+							<li>PHONE:</li>
+							<li>FAX:</li>
+							<li>E-MAIL:</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li><a href="#">sayhi&commat;pamabest.co.uk</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li>Pamabest Festival HQ</li>
+						<li>12 Pamastreet</li>
+						<li>ls1 1ab</li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<a href="http://www.twitter.com"><span class="genericon genericon-twitter"></span></a>
+					<a href="http://instagram.com"><span class="genericon genericon-instagram"></span></a>
+					<a href="http://facebook.com/Saborknight"><span class="genericon genericon-facebook"></span></a>
+				</div>
+				<!-- Icon Crediting the Author -->
+				<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icons8" title="Icons8">Icons8</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
+			</footer>
+		</div>
+	</body>
+</html>
