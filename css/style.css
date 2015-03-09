@@ -310,7 +310,6 @@ section {
 	float: right;
 }
 
-<<<<<<< Updated upstream
 /**
 * Footer
 **/
@@ -323,7 +322,6 @@ footer {
 	width: 97.6%;
 	border-top: solid 2px #fff;
 }
->>>>>>> Stashed changes
 
 /* Paris Main */
 
@@ -332,6 +330,24 @@ footer {
 	background-repeat: no-repeat;
 	width: 945px;
 	height: 645px;
+	margin: 30px;
+	position: relative;
+}
+
+#paris-home-text {
+	border: solid white 1px;
+	width: 480px;
+	height: 135px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 35px;
+	margin-bottom: 40px;
+}
+
+#paris-links {
+	border: solid white 1px;
+	height: 257px;
+	clear: both;
 }
 
 
