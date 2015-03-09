@@ -285,20 +285,39 @@ footer li {
 	z-index: 50;
 }
 
-#content {
+#home-content {
 	width: 960px;
 	margin: 0 auto;
+	padding-bottom: 0.5em;
 }
 
 .column {
-	width: 24%;
+	width: 23%;
 	display: inline-block;
+	margin-right: 2%;
+}
+.column:last-of-type {
+	margin-right: 0;
 }
 
 .column img	{
-	height: auto;
-	width: 
+	height: 10em;
+	width: auto;
+	margin: 0 15%;
 }
+
+/*.column:nth-of-type(1) img {
+	width: 10%;
+}
+.column:nth-of-type(2) img {
+	width: 40%;
+}
+.column:nth-of-type(3) img {
+	width: 78%;
+}
+.column:nth-of-type(4) img {
+	width: 100%;
+}*/
 
 aside {
 	width: ;
