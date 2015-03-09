@@ -1,0 +1,4 @@
+TO DO for WEB DEV:
+1. Apply anchor element to email in footer (gallery-test.html:101)
+2. Re-name gallery-test.html -> index.html
+3. Add font-loader.css to html head sections (cross-pages)
