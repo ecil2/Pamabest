@@ -69,10 +69,6 @@ header {
 	text-align: left;
 }
 
-#login-pass {
-	width: 52%;
-}
-
 .account span {
 	font-size: 18pt;
 	line-height: 0.6;
@@ -227,7 +223,7 @@ footer {
 	position: relative;
 	top: 0;
 	left: 0;
-	padding: 1em;
+	padding: 1em 2em;
 	clear: both;
 	width: 97.6%;
 	border-top: solid 2px #fff;
@@ -418,14 +414,12 @@ footer li {
 	margin: 0 15%;
 }
 
-aside {
-	width: ;
-	float: left;
+#stockholm-content aside {
+	width: 20%;
 }
 
-section {
-	height: 500px;
-	float: right;
+#stockholm-content section {
+	width: 70%;
 }
 
 /**
@@ -455,7 +449,6 @@ section {
 	font-size: 1.2em;
 	text-align: center;
 	line-height: 200%;
-	margin-top: 60px;
 }
 
 #paris-home h2 {
@@ -725,6 +718,11 @@ margin-top: 60px;}
 * Berlin Main
 **/
 
+#Berlin-content {
+	width: 75%;
+	margin: 0 auto;
+}
+
 #Berlin-banner {
 	padding-top: 2em;
 	background-color: #135567;
@@ -755,23 +753,21 @@ margin-top: 60px;}
 * Berlin Line Up
 **/
 
-#Berlin-left-content-line-up {
-	float: left;
-	width: 40%;
-	height: 600px;
-	margin-top: -50px;
-	}
-#Berlin-right-content-line-up {
-	float: right;
-	width: 800px;
-	height: 600px;
-	margin-bottom: 100px;
-	margin-right: 50px;
-	}
+#Berlin-left-content-line-up, #Berlin-right-content-line-up {
+	display: inline;
+	width: 48%;
+	height: auto;
+}
 
+#Berlin-right-content-line-up {
+	width: 43%;
+	margin-left: 2%;
+	margin-bottom: 6em;
+}
 /**
 * Stockholm Main
 **/
+
 
 /**
 * Stockholm Line Up
@@ -870,7 +866,7 @@ margin-top: 60px;}
 #contact-form textarea, .contentinputbox, #contact-form .subres {
 	font-size: 0.7em;
 	color: #3c3c3b;
-	background: #ffffff;
+	background: #fff;
 	border: none;
 	padding-left: 5px;
 	-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
