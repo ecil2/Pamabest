@@ -455,6 +455,7 @@ section {
 	font-size: 1.2em;
 	text-align: center;
 	line-height: 200%;
+	margin-top: 60px;
 }
 
 #paris-home h2 {
@@ -668,7 +669,8 @@ section {
 	height:710px;
 	background-color:#FFF;
 	background-image:url(../img/HomePageBackground.png);
-	margin: 0 auto;}
+	margin: 0 auto;
+	margin-top: 60px;}
 #viewsetlist{ 
 	width:960px;
 	height:250px;
@@ -713,7 +715,8 @@ h1{
 #pamapresents{
 	width:960px;
 	height:250px;
-	margin: 0 auto;}
+	margin: 0 auto;
+margin-top: 60px;}
 #lineup-content{
 	margin-top:20px;
 	margin bottom:20px;}
@@ -725,6 +728,7 @@ h1{
 #Berlin-banner {
 	padding-top: 2em;
 	background-color: #135567;
+	margin-top: 60px;
 }
 
 #Berlin-left-content {
