@@ -45,7 +45,6 @@ header {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 96.4%;
 	padding: 1em 1.5em 0.5em 1.5em;
 	border-bottom: solid 2px #fff;
 }
@@ -225,7 +224,6 @@ footer {
 	left: 0;
 	padding: 1em 2em;
 	clear: both;
-	width: 97.6%;
 	border-top: solid 2px #fff;
 }
 
@@ -770,18 +768,53 @@ margin-top: 60px;}
 
 #stockholm-content {
 	width: 960px;
-	margin: 0 auto;
+	margin: 2.5em auto 0 auto;
 }
 
 #Stockholm-intro img {
 	height: auto;
 	width: 35%;
-	margin: 0 auto;
+	margin: 0 63%;
 }
 
 /**
 * Stockholm Line Up
 **/
+
+#stockholm-fullwidth-content {
+	width: 100%;
+	padding-bottom: 5em;
+}
+
+#stockholm-fullwidth-content article {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 960px;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+.Stockholm-tickets {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: auto;
+	width: 30%;
+	z-index: 10;
+}
+
+article > div {
+	position: relative;
+	top: 50%;
+	left: 0;
+	width: 65%;
+	text-align: right;
+}
+
+article h1 {
+	text-align: right;
+}
 
 /**
 * Contact Page
