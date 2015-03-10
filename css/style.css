@@ -291,6 +291,7 @@ footer li {
 }
 
 .banner-slider {
+	background-color: #000;
 	-webkit-animation: image-slide 20s ease infinite;
 	-moz-animation: image-slide 20s ease infinite;
 	animation: image-slide 20s ease infinite;
@@ -726,7 +727,6 @@ margin-top: 60px;}
 #Berlin-banner {
 	padding-top: 2em;
 	background-color: #135567;
-	margin-top: 60px;
 }
 
 #Berlin-left-content {
@@ -736,18 +736,18 @@ margin-top: 60px;}
 	height:500px;
 	margin-left: 150px;
 	margin-top: 75px;
-	}
+}
 #Berlin-left-content-text {
 	font-size:20px;
 	margin-top: 10px;
-	}
+}
 #Berlin-right-content {
 	float: right;
 	width: 700px;
 	height: 800px;
 	margin-right:150px;
 	margin-top: 50px;
-	}
+}
 
 /**
 * Berlin Line Up
@@ -768,6 +768,16 @@ margin-top: 60px;}
 * Stockholm Main
 **/
 
+#stockholm-content {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#Stockholm-intro img {
+	height: auto;
+	width: 35%;
+	margin: 0 auto;
+}
 
 /**
 * Stockholm Line Up
