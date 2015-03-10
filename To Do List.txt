@@ -6,4 +6,4 @@ FOR FEADER:
 2. DONE, PROGRESSED - Add Anchor element for the logo pointing to home (gallery-test.html:33)
 3. DONE, PROGRESSED - Apply anchor element to email in footer (gallery-test.html:101)
 4. DONE, PROGRESSED - ul to the footer columns!
-5. Add br element to make sure login inputs stay on different levels
+5. DONE, PROGRESSED - Add br element to make sure login inputs stay on different levels

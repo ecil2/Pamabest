@@ -490,7 +490,7 @@ section {
 	left: 295px;
 }
 
-#Madrid-buyTickets {
+#Paris-buyTickets {
 	right: 35px;
 }
 
@@ -663,7 +663,7 @@ section {
 * Madrid Main
 **/
 
-#content{
+#Madrid-content{
 	width:960px;
 	height:710px;
 	background-color:#FFF;
@@ -673,7 +673,7 @@ section {
 	width:960px;
 	height:250px;
 	margin: 0 auto;}
-#buytickets {
+#Madrid-buytickets {
 	margin-top:10px;
 	margin-right:50px;
 	float:right;

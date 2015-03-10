@@ -1,19 +1,22 @@
 
 				<header id="innerHeader">
-					<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					<a href="index.html">
+						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					</a>
 					<div class="account form-containers">
 						<form action="login.php" method="POST">
 							<label for="login-user">Login</label>
 							<input type="text" id="login-user" placeholder="Username" required>
+							<br>
 							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
-							<input type="submit" value="" class="genericon genericon-next">
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
 						<form action="quick-sign-up.php" method="POST">
 							<label for="sign-up-user">Sign Up</label>
 							<input type="text" id="sign-up-user" placeholder="Username" required>
-							<input type="submit" value="S">
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 					</div>
 					<div class="search form-containers">

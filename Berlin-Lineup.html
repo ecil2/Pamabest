@@ -7,6 +7,7 @@
 		<meta name="author" content="AlMaKyton">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
 		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
 		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
 		<!--[if lt IE 9]>
@@ -29,11 +30,14 @@
 		<div class="wrapper">
 			<div id="outerHeader">
 				<header id="innerHeader">
-					<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					<a href="index.html">
+						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					</a>
 					<div class="account form-containers">
 						<form action="login.php" method="POST">
 							<label for="login-user">Login</label>
 							<input type="text" id="login-user" placeholder="Username" required>
+							<br>
 							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
 							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
@@ -75,23 +79,30 @@
                 	<img src="img/Right-Line-Up-Berlin.png">	
                 </div>
 			</div>
+
 			<footer>
 				<div class="footer-column">
 					<div>
-						<li>PHONE:</li>
-						<li>FAX:</li>
-						<li>E-MAIL:</li>
+						<ul>
+							<li>PHONE:</li>
+							<li>FAX:</li>
+							<li>E-MAIL:</li>
+						</ul>
 					</div>
 					<div>
-						<li>0113&nbsp;156&nbsp;3465</li>
-						<li>0113&nbsp;156&nbsp;3465</li>
-						<li>sayhi&commat;pamabest.co.uk</li>
+						<ul>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li><a href="#">sayhi&commat;pamabest.co.uk</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="footer-column">
-					<li>Pamabest Festival HQ</li>
-					<li>12 Pamastreet</li>
-					<li>ls1 1ab</li>
+					<ul>
+						<li>Pamabest Festival HQ</li>
+						<li>12 Pamastreet</li>
+						<li>ls1 1ab</li>
+					</ul>
 				</div>
 				<div class="footer-column">
 					<a href="http://www.twitter.com"><span class="genericon genericon-twitter"></span></a>
