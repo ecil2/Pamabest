@@ -62,7 +62,7 @@
 							<li><a href="Berlin-homepage.html">Berlin</a></li>
 							<li><a href="Stockholm-homepage.html">Stockholm</a></li>
 							<li><a href="Tickets.html">Tickets</a></li>
-							<li><a href="Contact.html">Contact</a></li>
+							<li><a class="nav-active" href="Contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -91,18 +91,17 @@
 					</div>
 
 					<div id="contact-form">
-						<form>
-							<form method="post" action="script-on-server.php" class="details">
-								<label for="fname">Forename:</label>
-								<input type="text" value="Enter your first name here" class="contentinputbox" id="fname">
-								<label for="sname">Surename:</label>
-								<input type="text" value="Enter your last name here" class="contentinputbox" id="sname">
-								<label for ="contactemail">Email:</label>
-								<input type="email" value="Enter your Email address here" maxlength="30" class="contentinputbox" id="contactemail">
-								<label>Nature of your Enquiry: 
-								<textarea rows="12" cols="46" id="enquirybox">Enter your Enquiry.</textarea></label>
-								<input type="reset" value="Clear" class="subres">
-								<input type="submit" value="Send" class="subres">
+						<form method="post" action="script-on-server.php" class="details">
+							<label for="fname">Forename:</label>
+							<input type="text" placeholder="Enter your first name here" class="contentinputbox" id="fname">
+							<label for="sname">Surename:</label>
+							<input type="text" placeholder="Enter your last name here" class="contentinputbox" id="sname">
+							<label for ="contactemail">Email:</label>
+							<input type="email" placeholder="Enter your Email address here" maxlength="30" class="contentinputbox" id="contactemail">
+							<label>Nature of your Enquiry: 
+							<textarea rows="12" cols="46" id="enquirybox">Enter your Enquiry.</textarea></label>
+							<input type="reset" value="Clear" class="subres">
+							<input type="submit" value="Send" class="subres">
 						</form>
 					</div>
 
