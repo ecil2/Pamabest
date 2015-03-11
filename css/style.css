@@ -413,14 +413,6 @@ footer li {
 	margin: 0 15%;
 }
 
-#stockholm-content aside {
-	width: 20%;
-}
-
-#stockholm-content section {
-	width: 70%;
-}
-
 /**
 * Paris Main
 **/
@@ -767,6 +759,9 @@ margin-top: 60px;}
 **/
 
 #stockholm-content {
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 960px;
 	margin: 2.5em auto 0 auto;
 }
@@ -774,7 +769,57 @@ margin-top: 60px;}
 #Stockholm-intro img {
 	height: auto;
 	width: 35%;
-	margin: 0 63%;
+}
+
+#Stockholm-intro {
+	text-align: center;
+}
+
+#stockholm-content aside {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0;
+	text-align: right;
+}
+
+#stockholm-content aside .main-performer {
+	font-size: 18pt;
+}
+
+#stockholm-content ul {
+	background-color: #009FE2;
+	padding: 1em 0;
+}
+
+#stockholm-content aside li {
+	font-size: 16pt;
+	list-style-type: none;
+}
+
+#stockholm-content aside li:hover, #stockholm-content aside li:focus, #stockholm-content aside li:active {
+	background-color: #00719E;
+	border-bottom: solid 1px #005070;
+	border-top: solid 1px #005070;
+	-webkit-box-shadow: inset 0px 0px 23px -2px rgba(0,158,226,0.66);
+	-moz-box-shadow: inset 0px 0px 23px -2px rgba(0,158,226,0.66);
+	box-shadow: inset 0px 0px 23px -2px rgba(0,158,226,0.66);
+}
+
+#stockholm-content a {
+	color: rgba(0,0,0,0.7);
+	padding: 0 1em;
+}
+
+#stockholm-content .main-performer a {
+	color: #000;
+}
+
+#stockholm-content section {
+	width: 70%;
+	margin-bottom: 2em;
 }
 
 /**
