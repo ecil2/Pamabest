@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Profile | Pamabest European Festival</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="The Popular European Music Festival">
+		<meta name="author" content="AlMaKyton">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
+		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
+		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Include jQuery Library -->
+		<script src="js/jquery-1.11.2.js"></script>
+		<!-- Begin jQuery Script -->
+		<!-- Source: http://stackoverflow.com/questions/4818854/javascript-import-html-is-it-possible/4819087#4819087. Accessed: 04 March 2015; -->
+		<script type="text/javascript">/*
+		$(document).ready(function(){
+			$('#outerHeader').load('./header.html');
+		});*/
+		</script>
+		<!-- Included JS Snippets -->
+		<!-- To be Completed -->
+		<!-- <script src="js/search-bar.js"></script> -->
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="outerHeader">
+				<header id="innerHeader">
+					<a href="index.html">
+						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
+					</a>
+					<div class="account form-containers">
+						<form action="login.php" method="POST">
+							<label for="login-user">Login</label>
+							<input type="text" id="login-user" placeholder="Username" required>
+							<br>
+							<!-- This Password field will be hidden until the user field is active. Use CSS to hide -->
+							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
+						</form>
+						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
+						<form action="quick-sign-up.php" method="POST">
+							<label for="sign-up-user">Sign Up</label>
+							<input type="text" id="sign-up-user" placeholder="Username" required>
+							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
+						</form>
+					</div>
+					<div class="search form-containers">
+						<div>
+							<a href="Profile.html">
+								<span class="genericon genericon-user"></span>
+								<span>Profile</span>
+							</a>
+						</div>
+						<form action="search.php" method="GET">
+							<!-- Icon to be set for the :before pseudo of the label element -->
+							<label for="search" class="genericon genericon-search"></label>
+							<input type="search" id="search" placeholder="John Doe">
+						</form>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="Paris-homepage.html">Paris</a></li>
+							<li><a href="Madrid-homepage.html">Madrid</a></li>
+							<li><a href="Berlin-homepage.html">Berlin</a></li>
+							<li><a href="Stockholm-homepage.html">Stockholm</a></li>
+							<li><a href="Tickets.html">Tickets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+
+			<div id="profile-content">
+				<div id="profile-page">
+					<section>
+						<img class="profile-img" src="img/Profile-image.png" height="300" width="300">
+						<div class="profile">
+							<h1>John Doe</h1>
+							<div>
+								<img class="stage-icons" src="img/microphone-icon.png" alt="Mic Icon" height="64" width="64">
+								<img class="stage-icons" src="img/drum-icon.png" alt="Drum Icon" height="64" width="64">
+								<img class="stage-icons" src="img/saxophone-icon.png" alt="Sax Icon" height="64" width="64">
+								<img class="stage-icons" src="img/guitar-icon.png" alt="Guitar Icon" height="64" width="64">
+							</div>
+						</div>
+						<div class="geography">
+							<img class="geographic-icons lang-icon" src="img/flag-icon.png" alt="Lang Icon" height="512" width="512">
+							<p>English, Spanish</p>
+							<img class="geographic-icons" src="img/location-icon.png" alt="Location Icon" height="128" width="128">
+							<p>London, England</p>
+						</div>
+					</section>
+					<section class="biography">
+						<div class="columns-3">
+							<h2>About me</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo voluptatem quia voluptas sit aspernatur.</p>
+						</div>
+						<div class="columns-3">
+							<h2>Past Pamabest Events</h2>
+							<ul class="columns-2">
+								<li class="blue">Stockholm 2014</li>
+								<li class="red">Paris 2014</li>
+								<li class="yellow">Madrid 2014</li>
+								<li class="green">Berlin 2011</li>
+								<li class="blue">Stockholm 2011</li>
+							</ul>
+							<ul class="columns-2">
+								<li>2 Days</li>
+								<li>2 Days</li>
+								<li>4 Days</li>
+								<li>3 Days</li>
+								<li>2 Days</li>
+							</ul>
+						</div>
+						<div class="columns-3">
+							<h2>Future Pamabest Events</h2>
+							<p>Pamabest Travel Pass 2015:</p>
+							<ul>
+								<li class="blue">Stockholm</li>
+								<li class="red">Paris</li>
+								<li class="yellow">Madrid</li>
+								<li class="green">Berlin</li>
+							</ul>
+					</section>
+					<section class="profile-feed">
+						<div class="columns-2-bias">
+							<h2>Latest Media:</h2>
+							<p>Wow! Looks like John has been busy.
+							<br>
+							Click on any image or video clip to make it bigger. 
+							<br>
+							If you like it, let John know by giving it a heart.</p>
+						</div>
+						<div class="columns-2-bias image-wrap">
+							<div>
+								<img class="video" src="img/profile-1.jpg" alt="Profile Image 1" height="2760" width="3684">
+								<img src="img/profile-2.jpg" alt="Profile Image 2" height="2760" width="3684">
+								<img src="img/profile-3.jpg" alt="Profile Image 3" height="2760" width="3684">
+								<img class="video" src="img/profile-4.jpg" alt="Profile Image 4" height="2760" width="3684">
+								<img src="img/profile-5.jpg" alt="Profile Image 5" height="2760" width="3684">
+							</div>
+							<div>
+								<img src="img/profile-6.jpg" alt="Profile Image 6" height="2760" width="3684">
+								<img src="img/profile-7.jpg" alt="Profile Image 7" height="2760" width="3684">
+								<img class="video" src="img/profile-8.jpg" alt="Profile Image 8" height="2760" width="3684">
+								<img src="img/profile-9.jpg" alt="Profile Image 9" height="2760" width="3684">
+								<img src="img/profile-10.jpg" alt="Profile Image 10" height="2760" width="3684">
+								<img src="img/profile-11.jpg" alt="Profile Image 11" height="2760" width="3684">
+							</div>
+						</div>
+					</section>
+				</div>				
+			</div>
+
+			<footer>
+				<div class="footer-column">
+					<div>
+						<ul>
+							<li>PHONE:</li>
+							<li>FAX:</li>
+							<li>E-MAIL:</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li>0113&nbsp;156&nbsp;3465</li>
+							<li><a href="#">sayhi&commat;pamabest.co.uk</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li>Pamabest Festival HQ</li>
+						<li>12 Pamastreet</li>
+						<li>ls1 1ab</li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<a href="http://www.twitter.com"><span class="genericon genericon-twitter"></span></a>
+					<a href="http://instagram.com"><span class="genericon genericon-instagram"></span></a>
+					<a href="http://facebook.com"><span class="genericon genericon-facebook"></span></a>
+				</div>
+				<!-- Icon Crediting the Author -->
+				<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icons8" title="Icons8">Icons8</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
+			</footer>
+		</div>
+	</body>
+</html>
