@@ -1218,9 +1218,13 @@ select {
 	height: 9.5em;
 }
 
-.profile-feed img:after {
-	content: '\f461';
-	font-size: 25%;
+.profile-feed img:before {
+    content: '\f101';
+    font: normal 16px/1 'Genericons';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: blue;
 }
 
 .profile-feed > div:first-of-type {
@@ -1234,4 +1238,20 @@ select {
 	width: 80em;
 	height: 9.5em;
 	margin-bottom: 0.25em;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+.green {
+	color: green;
+}
+
+.yellow {
+	color: yellow;
 }
