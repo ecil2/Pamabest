@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Line Ups - Paris | Pamabest European Festival</title>
+		<title>Paris Line Up | Pamabest European Festival</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="The Popular European Music Festival">
 		<meta name="author" content="AlMaKyton">
+		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css">
 		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
 		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
 		<!--[if lt IE 9]>
@@ -16,6 +17,7 @@
 		<!-- Include jQuery Library -->
 		<script src="js/jquery-1.11.2.js"></script>
 		<!-- Begin jQuery Script -->
+		<script src="js/mobile-header.js"></script>
 		<!-- Source: http://stackoverflow.com/questions/4818854/javascript-import-html-is-it-possible/4819087#4819087. Accessed: 04 March 2015; -->
 		<script type="text/javascript">/*
 		$(document).ready(function(){
@@ -30,11 +32,13 @@
 		<div class="wrapper">
 			<div id="outerHeader">
 				<header id="innerHeader">
+					<span id="show-menu" class="link mobile genericon genericon-menu" onclick="showMenu()"></span>
+					<span id="hide-menu" class="link mobile genericon genericon-menu" onclick="hideMenu()"></span>
 					<a href="index.html">
 						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
 					</a>
 					<div class="account form-containers">
-						<form action="login.php" method="POST">
+						<form id="login-casing" action="login.php" method="POST">
 							<label for="login-user">Login</label>
 							<input type="text" id="login-user" placeholder="Username" required>
 							<br>
@@ -42,29 +46,31 @@
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
 							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
-						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
-						<form action="quick-sign-up.php" method="POST">
+						<form id="sign-up" action="quick-sign-up.php" method="POST">
 							<label for="sign-up-user">Sign Up</label>
 							<input type="text" id="sign-up-user" placeholder="Username" required>
 							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 					</div>
 					<div class="search form-containers">
-						<div>
+						<div class="account-buttons">
+							<span id="show-login" class="link mobile genericon genericon-key" onclick="showLogin()"></span>
+							<span id="hide-login" class="link mobile genericon genericon-key" onclick="hideLogin()"></span>
 							<a href="Profile.html">
 								<span class="genericon genericon-user"></span>
-								<span>Profile</span>
+								<span class="desktop">Profile</span>
 							</a>
+							<span id="show-sign-up" class="link mobile genericon genericon-plus" onclick="showSignUp()"></span>
+							<span id="hide-sign-up" class="link mobile genericon genericon-plus" onclick="hideSignUp()"></span>
 						</div>
 						<form action="search.php" method="GET">
-							<!-- Icon to be set for the :before pseudo of the label element -->
 							<label for="search" class="genericon genericon-search"></label>
 							<input type="search" id="search" placeholder="John Doe">
 						</form>
 					</div>
-					<nav>
+					<nav id="nav">
 						<ul>
-							<li><a class="nav-active" href="Paris-homepage.html">Paris</a></li>
+							<li class="active"><a href="Paris-homepage.html">Paris</a></li>
 							<li><a href="Madrid-homepage.html">Madrid</a></li>
 							<li><a href="Berlin-homepage.html">Berlin</a></li>
 							<li><a href="Stockholm-homepage.html">Stockholm</a></li>
@@ -74,7 +80,6 @@
 					</nav>
 				</header>
 			</div>
-
 
 			<div id="paris-content">
 				<div id="paris-lineup">
