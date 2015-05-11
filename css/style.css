@@ -36,7 +36,7 @@ img {
 /**
 * General
 **/
-.mobile {
+span.mobile, #hide-menu, #hide-login, #hide-sign-up {
 	display: none;
 }
 
@@ -1130,6 +1130,10 @@ select {
 	background: linear-gradient(to right,  rgba(255,5,9,0.14) 0%,rgba(255,5,9,0.16) 2%,rgba(255,5,9,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ff0509', endColorstr='#ff0509',GradientType=1 ); /* IE6-9 */
 	z-index: -2;
+}
+
+.geography br {
+	display: none;
 }
 
 .geographic-icons {

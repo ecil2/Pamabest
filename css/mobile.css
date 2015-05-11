@@ -1,12 +1,10 @@
 @media (max-width: 960px) {
+	/* General + Header */
 	.desktop {
-		display: none !important;
-	}
-	.mobile {
-		display: inline-block;
-	}
-	#hide-menu, #hide-login, #hide-sign-up {
 		display: none;
+	}
+	span.mobile {
+		display: inline-block;
 	}
 	.header-logo {
 		width: 60%;
@@ -78,8 +76,92 @@
 	.link {
 		cursor: pointer;
 	}
+	/* Footer */
+	.footer-column:first-of-type {
+		margin-top: 20%;
+		border-bottom: solid 2px #fff;
+		padding-bottom: 4%;
+		margin-bottom: 4%;
+	}
+	.footer-column, .footer-column:last-of-type {
+		width: auto;
+		display: block;
+	}
+	.footer-column:last-of-type {
+		top: 15%;
+	}
 	/* Profile Page */
 	#profile-page {
+		min-width: initial;
+		width: auto;
 		margin: 0;
+		box-shadow: none;
+		padding: 1.3em 0.5em;
+	}
+	.profile {
+		top: 0;
+		right: 10%;
+		left: 30%;
+	}
+	.profile-img {
+		height: auto;
+		width: 25%;
+	}
+	#profile-page div > h1 {
+		font-size: 1.5em;
+		display: block;
+		text-align: left;
+	}
+	.stage-icons {
+		height: 2.5em;
+	}
+	#profile-page section:first-of-type > div > div {
+		display: block;
+		margin-top: 0.2em;
+		text-align: left;
+	}
+	.geography br {
+		display: block;
+	}
+	.geography {
+		position: relative;
+		top: 0;
+		left: -2em;
+		padding: 0.2em 1em 0.2em 0;
+	}
+	.columns-3, .biography .columns-3:first-of-type {
+		margin-top: 0.7em;
+		display: block;
+		width: 100%;
+	}
+	.columns-2-bias {
+		display: block;
+		width: auto;
+		margin-right: 0;
+	}
+	.profile-feed > div:first-of-type {
+		height: auto;
+		margin-bottom: 1em;
+	}
+	.columns-2-bias:last-of-type {
+		width: 100%;
+		overflow-y: visible;
+		overflow-x: visible;
+	}
+	.profile-feed {
+		height: auto;
+	}
+	.image-wrap > div {
+		width: auto;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.profile-feed img {
+		width: 100%;
+		height: auto;
+	}
+	.video:before {
+		top: initial;
+		bottom: auto;
 	}
 }
