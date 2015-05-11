@@ -7,6 +7,7 @@
 		<meta name="author" content="AlMaKyton">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css">
 		<link rel="stylesheet" type="text/css" href="fonts/font-loader.css">
 		<!-- Free Icon Fonts. Source: http://genericons.com/#standard. Accessed: 8 March 2015; -->
 		<link rel="stylesheet" type="text/css" href="css/genericons/genericons.css">
@@ -16,6 +17,7 @@
 		<!-- Include jQuery Library -->
 		<script src="js/jquery-1.11.2.js"></script>
 		<!-- Begin jQuery Script -->
+		<script src="js/mobile-header.js"></script>
 		<!-- Source: http://stackoverflow.com/questions/4818854/javascript-import-html-is-it-possible/4819087#4819087. Accessed: 04 March 2015; -->
 		<script type="text/javascript">/*
 		$(document).ready(function(){
@@ -30,11 +32,13 @@
 		<div class="wrapper">
 			<div id="outerHeader">
 				<header id="innerHeader">
+					<span id="show-menu" class="link mobile genericon genericon-menu" onclick="showMenu()"></span>
+					<span id="hide-menu" class="link mobile genericon genericon-menu" onclick="hideMenu()"></span>
 					<a href="index.html">
 						<img class="header-logo" src="img/headerLogo.png" alt="Pamabest Logo" height="1175" width="2332">
 					</a>
 					<div class="account form-containers">
-						<form action="login.php" method="POST">
+						<form id="login-casing" action="login.php" method="POST">
 							<label for="login-user">Login</label>
 							<input type="text" id="login-user" placeholder="Username" required>
 							<br>
@@ -42,27 +46,29 @@
 							<input type="password" id="login-pass" placeholder="Password" autocomplete="off" required>
 							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
-						<!-- The below form will send a variable to the server (using PHP) and load the full sign up page where the server will return the variable entered before... Well, thats what WOULD happen... -->
-						<form action="quick-sign-up.php" method="POST">
+						<form id="sign-up" action="quick-sign-up.php" method="POST">
 							<label for="sign-up-user">Sign Up</label>
 							<input type="text" id="sign-up-user" placeholder="Username" required>
 							<button type="submit" name="submit"><span class="genericon genericon-next"></span></button>
 						</form>
 					</div>
 					<div class="search form-containers">
-						<div>
+						<div class="account-buttons">
+							<span id="show-login" class="link mobile genericon genericon-key" onclick="showLogin()"></span>
+							<span id="hide-login" class="link mobile genericon genericon-key" onclick="hideLogin()"></span>
 							<a href="Profile.html">
 								<span class="genericon genericon-user"></span>
-								<span>Profile</span>
+								<span class="desktop">Profile</span>
 							</a>
+							<span id="show-sign-up" class="link mobile genericon genericon-plus" onclick="showSignUp()"></span>
+							<span id="hide-sign-up" class="link mobile genericon genericon-plus" onclick="hideSignUp()"></span>
 						</div>
 						<form action="search.php" method="GET">
-							<!-- Icon to be set for the :before pseudo of the label element -->
 							<label for="search" class="genericon genericon-search"></label>
 							<input type="search" id="search" placeholder="John Doe">
 						</form>
 					</div>
-					<nav>
+					<nav id="nav">
 						<ul>
 							<li><a href="Paris-homepage.html">Paris</a></li>
 							<li><a href="Madrid-homepage.html">Madrid</a></li>
@@ -140,19 +146,18 @@
 						</div>
 						<div class="columns-2-bias image-wrap">
 							<div>
-								<img class="video" src="img/profile-1.jpg" alt="Profile Image 1" height="2760" width="3684">
-								<img src="img/profile-2.jpg" alt="Profile Image 2" height="2760" width="3684">
-								<img src="img/profile-3.jpg" alt="Profile Image 3" height="2760" width="3684">
-								<img class="video" src="img/profile-4.jpg" alt="Profile Image 4" height="2760" width="3684">
-								<img src="img/profile-5.jpg" alt="Profile Image 5" height="2760" width="3684">
+								<span class="video"><img src="img/profile-1.jpg" alt="Profile Image 1" height="2760" width="3684"></span>
+								<span><img src="img/profile-2.jpg" alt="Profile Image 2" height="2760" width="3684"></span>
+								<span><img src="img/profile-3.jpg" alt="Profile Image 3" height="2760" width="3684"></span>
+								<span class="video"><img src="img/profile-4.jpg" alt="Profile Image 4" height="2760" width="3684"></span>
+								<span><img src="img/profile-5.jpg" alt="Profile Image 5" height="2760" width="3684"></span>
 							</div>
 							<div>
-								<img src="img/profile-6.jpg" alt="Profile Image 6" height="2760" width="3684">
-								<img src="img/profile-7.jpg" alt="Profile Image 7" height="2760" width="3684">
-								<img class="video" src="img/profile-8.jpg" alt="Profile Image 8" height="2760" width="3684">
-								<img src="img/profile-9.jpg" alt="Profile Image 9" height="2760" width="3684">
-								<img src="img/profile-10.jpg" alt="Profile Image 10" height="2760" width="3684">
-								<img src="img/profile-11.jpg" alt="Profile Image 11" height="2760" width="3684">
+								<span><img src="img/profile-6.jpg" alt="Profile Image 6" height="2760" width="3684"></span>
+								<span><img src="img/profile-7.jpg" alt="Profile Image 7" height="2760" width="3684"></span>
+								<span class="video"><img src="img/profile-8.jpg" alt="Profile Image 8" height="2760" width="3684"></span>
+								<span><img src="img/profile-9.jpg" alt="Profile Image 9" height="2760" width="3684"></span>
+								<span><img src="img/profile-10.jpg" alt="Profile Image 10" height="2760" width="3684"></span>
 							</div>
 						</div>
 					</section>

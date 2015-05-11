@@ -36,6 +36,10 @@ img {
 /**
 * General
 **/
+.mobile {
+	display: none;
+}
+
 .wrapper {
 	background-image:url(../img/backgroundImage.jpg);
 	background-repeat: no-repeat;
@@ -50,10 +54,6 @@ header, footer {
 a:link, a:visited {
 	color: #fff;
 	text-decoration: none;
-}
-
-input {
-	
 }
 
 /**
@@ -128,12 +128,6 @@ header {
 .search div {
 	margin-bottom: 0.2em;
 }
-/* To be completed */
-/*
-#search {
-	width: 0;
-}
-*/
 
 nav {
 	position: absolute;
@@ -1218,16 +1212,38 @@ select {
 	height: 9.5em;
 }
 
-.profile-feed img:before {
-    content: '\f101';
-    font: normal 16px/1 'Genericons';
+.profile-feed span {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.video:before {
+    content: '\f104';
+    font: normal 3em/1 'Genericons';
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    bottom: 2.1em;
+    left: 4px;
+    color: red;
+}
+
+.profile-feed span:after {
+    content: '\f461';
+    font: normal 1.8em/1 'Genericons';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
 	color: blue;
 }
 
 .profile-feed > div:first-of-type {
+	height: 91%;
 	text-align: justify;
 	background-color: #65a0cd;
 	padding: 1.2em;

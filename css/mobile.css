@@ -1,3 +1,85 @@
 @media (max-width: 960px) {
-	
+	.desktop {
+		display: none !important;
+	}
+	.mobile {
+		display: inline-block;
+	}
+	#hide-menu, #hide-login, #hide-sign-up {
+		display: none;
+	}
+	.header-logo {
+		width: 60%;
+		left: 15%;
+	}
+	.form-containers {
+		position: static;
+		text-align: center;
+		width: 100%;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+	nav {
+		position: relative;
+		bottom: -0.5em;
+		left: -2.2em;
+		opacity: 0.0;
+		height: 0;
+	}
+	nav li {
+		display: block;
+	}
+	nav a {
+		width: 110%;
+	}
+	label:not(.genericon), input:not(#search) {
+		display: block;
+		text-align: center;
+		width: 90%;
+		margin-bottom: 0.2em;
+	}
+	label:not(.genericon) {
+		width: 100%;
+	}
+	input {
+		padding: 1em;
+	}
+	/* Pre-js Toggle */
+	#login-casing, #sign-up {
+		opacity: 0.0;
+		height: 0;
+	}
+	/* End Pre-js-Toggle */
+	.account > form:first-of-type {
+		height: auto;
+	}
+	.account > form:first-of-type:hover {
+		height: auto;
+	}
+	.account > form:first-of-type > input[type="password"], .account > form:first-of-type > button {
+		opacity: 1.0;
+	}
+	.account span {
+		font-size: 42pt;
+	}
+	header br {
+		display: none;
+	}
+	.search span.genericon, span.genericon-menu {
+		font-size: 42pt;
+	}
+	.search label.genericon {
+		font-size: 38pt;
+	}
+	.search input {
+		width: 60%;
+	}
+	.link {
+		cursor: pointer;
+	}
+	/* Profile Page */
+	#profile-page {
+		margin: 0;
+	}
 }
