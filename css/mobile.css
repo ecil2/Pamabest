@@ -1,7 +1,7 @@
 @media (max-width: 960px) {
 	/* General + Header */
 	.wrapper {
-		overflow: hidden;
+		/*overflow: hidden;// To Implement after Editing // */
 	}
 	.desktop {
 		display: none;
@@ -92,6 +92,11 @@
 	}
 	.footer-column:last-of-type {
 		top: 15%;
+		left: 2em;
+		right: auto;
+	}
+	.footer-column a:last-of-type .genericon {
+		margin: 0;
 	}
 	/* Homepage */
 	#banner {
@@ -172,6 +177,52 @@
 		100% {
 			transform: translateX(-600%);
 		}
+	}
+	/* Paris Home */
+	#paris-content {
+		width: auto;
+	}
+	#paris-content img {
+		width: 100%;
+	}
+	#paris-home {
+		margin: 0;
+		width: auto;
+		height: auto;
+		background-size: contain;
+		background-color: #802A29;
+	}
+	#paris-home-text {
+		width: auto;
+		height: auto;
+		margin: 0;
+		margin-top: 20%;
+		padding: 0.7em;
+	}
+	#paris-links {
+		height: auto;
+		position: static;
+		margin-left: 0;
+	}
+	.imageThumb {
+		position: relative;
+		height: auto;
+		margin-bottom: 0.5em;
+	}
+	.imageThumb p {
+		opacity: 1.0;
+		transition: none;
+		transform: translate(0px, -30px);
+	}
+	#viewGallery {
+		left: 0;
+	}
+	#Paris-buyTickets {
+		right: 0;
+	}
+	#parisgif {
+		width: 95% !important;
+		margin-left: 2.5%;
 	}
 	/* Profile Page */
 	#profile-page {
