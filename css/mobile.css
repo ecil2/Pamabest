@@ -224,6 +224,26 @@
 		width: 95% !important;
 		margin-left: 2.5%;
 	}
+	/* Madrid Home */
+	#Madrid-content {
+		width: auto;
+		height: auto;
+		margin: 0;
+	}
+	#viewsetlist {
+		width: auto;
+		height: auto;
+	}
+	#Madrid-buytickets, #travelbest {
+		float: none;
+		margin: 0;
+	}
+	#text {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 1em 0;
+	}
 	/* Profile Page */
 	#profile-page {
 		min-width: initial;
