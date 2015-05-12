@@ -244,6 +244,25 @@
 		margin: 0;
 		padding: 1em 0;
 	}
+	/* Berlin Home */
+	#Berlin-banner {
+		padding: 0;
+	}
+	#Berlin-content {
+		padding: 1em;
+	}
+	#Berlin-left-content, #Berlin-right-content {
+		float: none;
+		width: auto;
+		height: auto;
+		margin: 0;
+	}
+	#Berlin-left-content-text {
+		text-align: justify;
+	}
+	#Berlin-left-content img {
+		width: 75%;
+	}
 	/* Profile Page */
 	#profile-page {
 		min-width: initial;
