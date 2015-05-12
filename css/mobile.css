@@ -1,5 +1,8 @@
 @media (max-width: 960px) {
 	/* General + Header */
+	.wrapper {
+		overflow: hidden;
+	}
 	.desktop {
 		display: none;
 	}
@@ -89,6 +92,86 @@
 	}
 	.footer-column:last-of-type {
 		top: 15%;
+	}
+	/* Homepage */
+	#banner {
+		height: 10em;
+	}
+	.banner-slider img {
+		width: 150%;
+	}
+	#banner .banner-date {
+		font-size: 13pt;
+		top: 0.5em;
+		left: 0.5em;
+	}
+	#home-content {
+		width: 90%;
+		padding: 0 1em;
+		margin-bottom: 0.5em;
+	}
+	.column {
+		width: 100%;
+		display: block;
+		margin: 0;
+		text-align: justify;
+	}
+	.column img {
+		margin: 0 23%;
+	}
+	/* Banner Animation Keyframes */
+	@-webkit-keyframes image-slide {
+		0%, 22% {
+			transform: translateX(0%);
+		}
+		48%, 24% {
+			transform: translateX(-125%);
+		}
+		74%, 50% {
+			transform: translateX(-275%);
+		}
+		99%, 76% {
+			transform: translateX(-425%);
+		}
+		100% {
+			transform: translateX(-600%);
+		}
+	}
+
+	@-moz-keyframes image-slide {
+		0%, 22% {
+			transform: translateX(0%);
+		}
+		48%, 24% {
+			transform: translateX(-125%);
+		}
+		74%, 50% {
+			transform: translateX(-275%);
+		}
+		99%, 76% {
+			transform: translateX(-425%);
+		}
+		100% {
+			transform: translateX(-600%);
+		}
+	}
+
+	@keyframes image-slide {
+		0%, 22% {
+			transform: translateX(0%);
+		}
+		48%, 24% {
+			transform: translateX(-125%);
+		}
+		74%, 50% {
+			transform: translateX(-275%);
+		}
+		99%, 76% {
+			transform: translateX(-425%);
+		}
+		100% {
+			transform: translateX(-600%);
+		}
 	}
 	/* Profile Page */
 	#profile-page {
