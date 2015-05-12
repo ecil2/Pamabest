@@ -1,7 +1,7 @@
 @media (max-width: 960px) {
 	/* General + Header */
-	.wrapper {
-		/*overflow: hidden;// To Implement after Editing // */
+	.responsive-wrapper {
+		overflow: hidden;
 	}
 	.desktop {
 		display: none;
@@ -307,7 +307,7 @@
 		padding: 0;
 	}
 	#contact-info table {
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		width: 100%;
 	}
 	#contact-info table td {
