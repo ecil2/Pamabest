@@ -224,6 +224,31 @@
 		width: 95% !important;
 		margin-left: 2.5%;
 	}
+	/* Paris Line Up */
+	#paris-lineup {
+		width: auto;
+		height: auto;
+		margin: 0;
+		position: static;
+		background-size: contain;
+		padding: 20% 1em 1em 1em;
+		background-color: #802A29;
+	}
+	#paris-lineup-text {
+		width: auto;
+		height: auto;
+		float: none;
+		margin: 0;
+	}
+	#lineupcontainer {
+		height: auto;
+		position: static;
+		margin: 0;
+	}
+	.lineupimage {
+		position: static;
+		display: block;
+	}
 	/* Madrid Home */
 	#Madrid-content {
 		width: auto;
@@ -244,12 +269,22 @@
 		margin: 0;
 		padding: 1em 0;
 	}
+	/* Madrid Line Up */
+	#pamapresents {
+		width: auto;
+		height: auto;
+		margin: 0;
+	}
+	#lineup-content {
+		margin: 0;
+	}
 	/* Berlin Home */
 	#Berlin-banner {
 		padding: 0;
 	}
 	#Berlin-content {
 		padding: 1em;
+		width: auto;
 	}
 	#Berlin-left-content, #Berlin-right-content {
 		float: none;
@@ -262,6 +297,12 @@
 	}
 	#Berlin-left-content img {
 		width: 75%;
+	}
+	/* Berlin Line Up */
+	#Berlin-left-content-line-up, #Berlin-right-content-line-up {
+		display: block;
+		width: 100%;
+		margin: 0;
 	}
 	/* Stockholm Home */
 	#stockholm-content {
@@ -284,6 +325,31 @@
 	}
 	#Stockholm-intro img {
 		width: 60%;
+	}
+	/* Stockholm Line Up */
+	#stockholm-fullwidth-content article {
+		width: auto;
+		padding: 0;
+	}
+	#stockholm-fullwidth-content {
+		padding: 0;
+	}
+	.Stockholm-tickets {
+		top: -3em;
+	}
+	article h1, article > div {
+		text-align: left;
+	}
+	article h1 {
+		width: 75%;
+	}
+	article p {
+		text-align: justify;
+	}
+	article > div {
+		width: 80%;
+		left: 10%;
+		margin-bottom: 1em;
 	}
 	/* Contact */
 	#contact-content {
@@ -380,6 +446,9 @@
 		margin-top: 0.7em;
 		display: block;
 		width: 100%;
+	}
+	.columns-3:last-of-type {
+		margin-top: 0.7em;
 	}
 	.columns-2-bias {
 		display: block;
